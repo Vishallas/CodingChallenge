@@ -6,19 +6,14 @@ class Solution:
         print(items)
         # Generate all possible subsequences of size k
         def generate_subsequences(start, curr_subseq):
-            
             nonlocal max_elegance
             f=0
-
             if len(curr_subseq) == k:
                 total_profit = sum(item[0] for item in curr_subseq)
                 distinct_categories = len(set(item[1] for item in curr_subseq))
                 elegance = total_profit + distinct_categories**2
                 max_elegance = max(max_elegance, elegance)
-                f = 1
-            print(start, curr_subseq,max_elegance)
-            if f:
-                 return
+                return
             for i in range(start, n):
                 generate_subsequences(i + 1, curr_subseq + [items[i]])
     
