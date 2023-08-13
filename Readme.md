@@ -10,5 +10,5 @@ I've taken on the challenge to code every day for a year to enhance my skills, e
 
 ## Table of Contents
 
-- [Week 1](Week1-Details.md)
+- [Week 1](leetcode/week1-details.md)
 - Upcoming...
