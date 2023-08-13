@@ -1,5 +1,6 @@
+from typing import *
 class Solution:
-    def findMaximumElegance(self, items: list[list[int]], k: int) -> int:
+    def findMaximumElegance(self, items: List[List[int]], k: int) -> int:
         n = len(items)
         max_elegance = 0
         items.sort(reverse = True)
